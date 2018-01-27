@@ -11,6 +11,9 @@ function get_duplicates() {
     type: 'POST',
     data: BX24.getAuth(),
     dataType: 'json',
-    success: function(data){}
+    success: function(data){
+      var el = $('div').css('color', 'green');
+      alert(data);
+    }
   });
 }
