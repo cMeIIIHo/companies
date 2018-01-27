@@ -9,7 +9,7 @@ url = f"https://{domain}/rest/crm.company.list.json"
 
 @csrf_exempt
 def show_duplicates(request):
-    access_token = request.POST['access_token']
+    access_token = '92qtu0iet35fxn79dn444czk3i7e79kh'
     params = {'auth': access_token}
     r = requests.get(url=url, params=params)
     companies = r.json()['result']
