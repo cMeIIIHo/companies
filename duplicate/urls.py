@@ -5,5 +5,6 @@ app_name = 'duplicate'
 
 
 urlpatterns = [
-    url(r'^$', views.show_duplicates, name='show_duplicates'),
+    url(r'^$', views.index, name='index'),
+    url(r'api/get_duplicates', views.get_duplicates, name='get_duplicates')
 ]
